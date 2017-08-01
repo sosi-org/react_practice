@@ -64,3 +64,26 @@ Also make an HTML file:
 `<script src="app.js"></script>`
 dont forget to add a <div> with the right name: id="container"  or is="root"
 
+
+
+# TODO
+next steps:
+
+1.
+Use for test + webpack  (web server, etc)
+http://krasimirtsonev.com/blog/article/a-modern-react-starter-pack-based-on-webpack
+
+1.5
+move things into the src folder
+
+2.
+Use  ?
+
+3. Use CircleCI
+
+4.
+Pure ES2016
+
+5.
+Do practice some ES2016
+
