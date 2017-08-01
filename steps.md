@@ -1,9 +1,10 @@
 Steps taken
 
+# based on http://krasimirtsonev.com/blog/article/The-bare-minimum-to-work-with-React
 
 sudo npm update -g
 npm i babel-cli
-# ./node_modules/.bin/babel ./component.jsx
+# ./node_modules/.bin/babel ./hw.jsx
 # git mv hw.js hw.jsx
 # ./node_modules/.bin/babel ./hw.jsx  # wont work yet
 npm i babel-cli babel-preset-react
@@ -31,6 +32,14 @@ echo '{ "presets": ["react", "es2015"] }' > .babelrc
 
 npm i react react-dom babel-preset-react babel-preset-es2015 browserify babelify
 # echo ... # same
-./node_modules/.bin/browserify ./component.jsx -o ./bundle.js -t babelify
+./node_modules/.bin/browserify ./hw.jsx -o ./bundle.js -t babelify
 
 # We no longer use babel-cli
+removed from packags.json:
+          "babel-cli": "^6.24.1",
+# next: uglify (to minify) + watcher
+
+npm i react react-dom babel-preset-react babel-preset-es2015 watchify babelify
+
+./node_modules/.bin/watchify ./hw.jsx -o ./bundle.js -t babelify -v
+# use &
