@@ -1,6 +1,8 @@
 Steps taken
 
 # based on http://krasimirtsonev.com/blog/article/The-bare-minimum-to-work-with-React
+# The bare minimum to work with React
+# A tutorial less sophisticaed that one using WebPack
 
 sudo npm update -g
 npm i babel-cli
@@ -49,3 +51,16 @@ mkdir public
 npm i
 npm run build
 npm run watch
+
+
+
+To actually run on browser:
+Dont forget the following inside the JSX file:
+
+`import React from 'react';
+import ReactDOM from 'react-dom';`
+
+Also make an HTML file:
+`<script src="app.js"></script>`
+dont forget to add a <div> with the right name: id="container"  or is="root"
+
