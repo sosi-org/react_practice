@@ -1,4 +1,11 @@
 {
+  "name": "my-react-app",
+  "version": "1.0.0",
+  "description": "My  first HW react application. Purpose: Timeline",
+  "scripts": {
+    "build": "browserify ./hw.jsx -o ./public/app.js -t babelify",
+    "watch": "watchify ./hw.jsx -o ./public/app.js -t babelify -v"
+  },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",

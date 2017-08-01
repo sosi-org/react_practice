@@ -43,3 +43,9 @@ npm i react react-dom babel-preset-react babel-preset-es2015 watchify babelify
 
 ./node_modules/.bin/watchify ./hw.jsx -o ./bundle.js -t babelify -v
 # use &
+
+mkdir public
+
+npm i
+npm run build
+npm run watch
