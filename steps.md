@@ -87,3 +87,12 @@ Pure ES2016
 5.
 Do practice some ES2016
 
+
+
+
+
+
+
+================
+Next day:
+npm install css-loader --save-dev

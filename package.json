@@ -15,5 +15,9 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "react-css-modules": "^4.6.0"
   }
 }
