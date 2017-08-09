@@ -120,3 +120,43 @@ make sure q.js requires a few other js files.
 
 now run again
 touch webpack.config.js
+
+
+intesresting. It copies the modeuils files. How does it know?
+but keeps them in separate funcitons!
+nice trick.
+
+
+NODE_ENV=produciton     ./node_modules/webpack/bin/webpack.js
+
+now it's tiny.
+
+
+It doesnt recognise this first:  OccurenceOrderPlugin
+
+npm install -S jquery
+
+lodash = ?    is undescoreJS
+
+var $ = require('jquery')
+
+$(...). ...
+
+The module code is not in global scope.
+
+
+
+It can detect and use the SAME jquery
+
+Interesting:
+not noeed to mention jquery or module names in webpack.config.js
+
+Webpack; by definitin: generates STATIC files.
+
+
+export default ...
+(for webpack)
+
+You can also add HTML.
+I didn't.
+
