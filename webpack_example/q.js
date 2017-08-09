@@ -1,4 +1,5 @@
 // commonJS or nodeJS
-require('./module1.js');
+require('./m1.js');
+require('./m2.js');  // synchronous
 
 

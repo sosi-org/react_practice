@@ -96,3 +96,27 @@ Do practice some ES2016
 ================
 Next day:
 npm install css-loader --save-dev
+
+
+
+========================
+make a folder
+npm init
+<enter>
+
+npm install -S webpack
+
+
+./node_modules/webpack/bin/webpack.js
+# will miss webpack.config.js
+
+#why?
+#npm install -g webpack
+
+touch webpack.config.js
+COPY/PASTE IT  from https://gist.github.com/learncodeacademy/25092d8f1daf5e4a6fd3
+edit source name, etc. ENTRY=""
+make sure q.js requires a few other js files.
+
+now run again
+touch webpack.config.js
