@@ -1,11 +1,17 @@
-Steps taken
+# Steps taken
 
-# based on http://krasimirtsonev.com/blog/article/The-bare-minimum-to-work-with-React
-# The bare minimum to work with React
-# A tutorial less sophisticaed that one using WebPack
+based on http://krasimirtsonev.com/blog/article/The-bare-minimum-to-work-with-React
+
+The bare minimum to work with React
+
+A tutorial less sophisticaed that one using WebPack
+
+```sh
 
 sudo npm update -g
 npm i babel-cli
+```
+```
 # ./node_modules/.bin/babel ./hw.jsx
 # git mv hw.js hw.jsx
 # ./node_modules/.bin/babel ./hw.jsx  # wont work yet
@@ -51,22 +57,24 @@ mkdir public
 npm i
 npm run build
 npm run watch
-
+```
 
 
 To actually run on browser:
 Dont forget the following inside the JSX file:
 
+```jsx
 `import React from 'react';
 import ReactDOM from 'react-dom';`
+```
 
 Also make an HTML file:
 `<script src="app.js"></script>`
-dont forget to add a <div> with the right name: id="container"  or is="root"
+dont forget to add a `<div>` with the right name: `id="container"`  or `is="root"`
 
 
 
-# TODO
+## TODO
 next steps:
 
 1.
@@ -95,16 +103,18 @@ Do practice some ES2016
 
 ================
 Next day:
+```sh
 npm install css-loader --save-dev
-
+```
 
 
 ========================
 make a folder
+```sh
 npm init
 <enter>
 
-npm install -S webpack
+npm install -S webpack`
 
 
 ./node_modules/webpack/bin/webpack.js
@@ -114,34 +124,39 @@ npm install -S webpack
 #npm install -g webpack
 
 touch webpack.config.js
+```
 COPY/PASTE IT  from https://gist.github.com/learncodeacademy/25092d8f1daf5e4a6fd3
-edit source name, etc. ENTRY=""
+edit source name, etc. `ENTRY=""`
 make sure q.js requires a few other js files.
 
 now run again
+```
 touch webpack.config.js
-
+```
 
 intesresting. It copies the modeuils files. How does it know?
 but keeps them in separate funcitons!
 nice trick.
 
-
+```sh
 NODE_ENV=produciton     ./node_modules/webpack/bin/webpack.js
+```
 
 now it's tiny.
 
 
 It doesnt recognise this first:  OccurenceOrderPlugin
-
+```sh
 npm install -S jquery
+```
 
 lodash = ?    is undescoreJS
 
+```sh
 var $ = require('jquery')
 
 $(...). ...
-
+```
 The module code is not in global scope.
 
 
@@ -154,9 +169,8 @@ not noeed to mention jquery or module names in webpack.config.js
 Webpack; by definitin: generates STATIC files.
 
 
-export default ...
+`export default `...
 (for webpack)
 
 You can also add HTML.
 I didn't.
-
